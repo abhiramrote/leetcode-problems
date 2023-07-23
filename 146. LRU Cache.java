@@ -4,7 +4,6 @@ class LRUCache {
         int val;
         Node prev;
         Node next;
-
         Node(int key, int val) {
             this.key = key;
             this.val = val;
@@ -50,24 +49,20 @@ class LRUCache {
         }
         return -1;
     }
-    
     public void put(int key, int value) {
         if (m.containsKey(key)) {
             Node curr = m.get(key);
             m.remove(key);
             deleteNode(curr);
         }
-
         if (m.size() == cap) {
             m.remove(tail.prev.key);
             deleteNode(tail.prev);
         }
-
         addNode(new Node(key, value));
         m.put(key, head.next);
     }
 }
-
 /**
  * Your LRUCache object will be instantiated and called as such:
  * LRUCache obj = new LRUCache(capacity);
