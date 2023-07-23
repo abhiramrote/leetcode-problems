@@ -1,8 +1,6 @@
 class Solution {
-    public int fun(int i,int [][] nums,int prev,int max,int[][]dp){
-        
+    public int fun(int i,int [][] nums,int prev,int max,int[][]dp){        
         if(i==nums.length || max==0)  return 0;
-
         if(dp[prev+1][max]!=-1)  return dp[prev+1][max];
         int take=0;
         int not=0;
