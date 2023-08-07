@@ -9,7 +9,6 @@ class Solution {
                 if(dp[j]&& dict.contains(s.substring(j,i))){
                     dp[i]=true;
                     break;
-
                 }
             }
         }
