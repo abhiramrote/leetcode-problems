@@ -6,9 +6,7 @@ class LRUCache {
         Node next;
         Node(int key, int val) {
             this.key = key;
-            this.val = val;
-
-                
+            this.val = val;            
         }
     }
      Node head = new Node(-1, -1);
