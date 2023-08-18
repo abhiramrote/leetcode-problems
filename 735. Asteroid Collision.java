@@ -4,6 +4,7 @@ class Solution {
         Deque<Integer> st=new ArrayDeque<>();
         for(int i=0;i<n;i++){
             if(st.isEmpty() || a[i]>0)st.push(a[i]);
+                
             else{
                 while(!st.isEmpty() && st.peek()>0 && st.peek()<Math.abs(a[i])){
                     st.pop();
