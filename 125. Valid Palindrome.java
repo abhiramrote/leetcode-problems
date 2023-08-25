@@ -9,6 +9,8 @@ class Solution {
             if(!Character.isLetterOrDigit(currFirst))start++;
             else if(!Character.isLetterOrDigit(currLast))end--;
             else{
+
+                
                 if(Character.toLowerCase(currFirst)!=Character.toLowerCase(currLast)){
                   return false;  
                 }
