@@ -9,6 +9,7 @@ class Solution {
                dfs(i,visited,graph,unsafe);
                visited[i]=false;
            }
+           
        }
        ArrayList<Integer> result = new ArrayList<>();
         for(int i = 0;i<unsafe.length;i++){
